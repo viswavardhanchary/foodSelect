@@ -280,6 +280,26 @@ body {
   .top-ingre {
     width: 280px;
   }
+  .idili-content,
+.dosa-content,
+.puri-content,
+.vada-content,
+.bonda-content,
+.rice-content,
+.rasam-content,
+.sambar-content,
+.briyani-content,
+.dal-content,
+.brinjal-content,
+.fired-rice-content,
+.lemon-rice-content,
+.tamarind-content,
+.pickel-content {
+  width: 250px;
+}
+.a,
+.s {
+  width: 250px;
 }
 
 .video {
