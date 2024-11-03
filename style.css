@@ -1,0 +1,287 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+
+.head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 500px;
+  border: 1px solid black;
+  box-shadow: 1px 1px 20px black;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+.tiffin,
+.lunch,
+.dinner {
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  height: max-content;
+  font-size: 1.2rem;
+  background-color: rgb(99, 245, 99);
+}
+
+.tiffin:hover,
+.lunch:hover,
+.dinner:hover {
+  background-color: black;
+  color: rgb(99, 245, 99);
+  cursor: pointer;
+}
+
+.tiffin-content {
+  display: none;
+}
+
+.lunch-content {
+  display: none;
+}
+
+.dinner-content {
+  display: none;
+}
+
+.idili-content,
+.dosa-content,
+.puri-content,
+.vada-content,
+.bonda-content,
+.rice-content,
+.rasam-content,
+.sambar-content,
+.briyani-content,
+.dal-content,
+.brinjal-content,
+.fired-rice-content,
+.lemon-rice-content,
+.tamarind-content,
+.pickel-content {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.idili-image,
+.dosa-image,
+.puri-image,
+.vada-image,
+.bonda-image,
+.rice-image,
+.rasam-image,
+.sambar-image,
+.briyani-image,
+.dal-image,
+.brinjal-image,
+.fired-rice-image,
+.lemon-rice-image,
+.tamarind-image,
+.pickel-image {
+  border-radius: 50px;
+}
+
+.content-head {
+  margin-top: 0;
+}
+
+.a,
+.s {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.p {
+  transition: transform 0.5s;
+}
+
+.p:hover {
+  transform: rotate(90deg);
+}
+
+.message {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.para {
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.lets {
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lets:hover {
+  color: orange;
+  background-color: black;
+}
+
+.b {
+  cursor: not-allowed;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  height: max-content;
+  font-size: 1.2rem;
+  background-color: rgb(99, 245, 99);
+  flex-grow: 0;
+}
+
+.b:hover {
+  opacity: 0.4;
+}
+
+.displayIngre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-ingre {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  width: 480px;
+}
+
+.submit,
+.selected-items,
+.back-button,
+.back-to-home {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: orange;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+
+
+.back-button {
+  margin-bottom: 15px;
+  cursor: pointer;
+  float: left;
+}
+
+.submit:hover,
+.selected-items:hover {
+  cursor: pointer;
+  color: orange;
+  background-color: black;
+}
+
+.selected {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.added-items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.message-about-content {
+  display: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: orange;
+  margin-bottom: 15px;
+}
+
+.congra-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    width: 400px;
+    
+  }
+
+  .content {
+    width: 400px;
+  }
+  .top-ingre {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    width: 300px;
+  }
+
+  .content {
+    width: 300px;
+  }
+  .top-ingre {
+    width: 280px;
+  }
+}
+
+.video {
+  display: none;
+}
